@@ -1,0 +1,110 @@
+div{
+    font-family: "Assistant", "Helvetica Neue", "Helvetica", sans-serif;
+    font-weight: lighter;
+}
+
+.layout_grid {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto 250px auto;
+    grid-template-rows: auto 450px auto;
+    grid-template-areas:
+        ". . ."
+        ". namebox ."
+        ". . .";
+    /* background-color: ; */
+    background: url("/pittsburgh_background_unsplash.jpg"), linear-gradient(45deg, rgba(65, 32, 56, 0.5), rgba(7, 76, 146, 0.5));
+    /* background: url("/pittsburgh_background_unsplash.jpg"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    /* background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(http://lorempixel.com/800/600/nature/2); */
+
+}
+.name_and_info {
+    grid-area: namebox;
+    /* background-color: #242424; */
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: 3fr .75fr .5fr 2fr;
+    grid-template-columns: 15px auto 15px;
+    grid-template-areas:
+        "picture picture picture"
+        ". myname ."
+        ". title ."
+        "buttons buttons buttons";
+    align-items: center;
+}
+
+.avatar_box {
+    grid-area: picture;
+}
+.avatar {
+    border-radius: 50%;
+    background-image: url("headshot.png");
+    margin: 0 auto;
+    width:150px;
+    height:150px;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    border:0.5px solid #dbdbdb;
+    background-clip: content-box;
+    background-origin: content-box;
+}
+
+.name {
+    color:  #dbdbdb;
+    grid-area: myname;
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 2.2rem;
+    letter-spacing: 0.25rem;
+    /* border:1px solid #333333; */
+
+}
+
+.title {
+    color: #F4F4F5;
+    grid-area: title;
+
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 1.2rem;
+    letter-spacing: 0.25em;
+}
+
+.nav_buttons {
+    width:100%;
+    grid-area: buttons;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav_button {
+    text-align: center;
+    width: 200px;
+    color: #F4F4F5;
+    text-transform: lowercase;
+    padding:10px;
+    border-radius: 20px;
+    border: 1px solid  #dbdbdb;
+    letter-spacing: 0.25em;
+    margin: 5px;
+    transition: background-color 0.25s ease,
+                color  0.25s ease,
+                border  0.25s ease;
+}
+
+.nav_button:hover {
+    cursor: pointer;
+    color:rgba(61, 158, 255, 0.8);
+    border: 1px solid  rgba(61, 158, 255, 0.5);
+    background-color: rgba(0,0,0,.3)
+}
+/* breakpoints: 480 */
