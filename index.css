@@ -3,6 +3,16 @@ div{
     font-weight: lighter;
 }
 
+.background {
+    height: 100%;
+    background: url("pittsburgh_background_unsplash.jpg"), linear-gradient(45deg, rgba(65, 32, 56, 0.5), rgba(7, 76, 146, 0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: darken;
+    overflow: hidden;
+
+}
 .layout_grid {
     display: grid;
     height: 100vh;
@@ -13,12 +23,9 @@ div{
         ". namebox ."
         ". . .";
     /* background-color: ; */
-    background: url("/pittsburgh_background_unsplash.jpg"), linear-gradient(45deg, rgba(65, 32, 56, 0.5), rgba(7, 76, 146, 0.5));
+
     /* background: url("/pittsburgh_background_unsplash.jpg"); */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: darken;
+
     /* background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3)), url(http://lorempixel.com/800/600/nature/2); */
 
 }
@@ -48,7 +55,7 @@ div{
     height:150px;
     background-position: center;
     background-size: cover;
-    padding: 10px;
+    padding: 15px;
     border:0.5px solid #dbdbdb;
     background-clip: content-box;
     background-origin: content-box;
@@ -103,8 +110,8 @@ div{
 
 .nav_button:hover {
     cursor: pointer;
-    color:rgba(61, 158, 255, 0.8);
-    border: 1px solid  rgba(61, 158, 255, 0.5);
+    color:rgba(82, 189, 255, 0.8);
+    border: 1px solid  rgba(82, 189, 255, 0.5);
     background-color: rgba(0,0,0,.3)
 }
 /* breakpoints: 480 */
