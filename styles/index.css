@@ -3,7 +3,7 @@ div{
     font-weight: lighter;
 }
 body {
-    background-color: #282F2F;
+    background: linear-gradient(45deg, rgba(51, 41, 48, 1), rgba(48, 56, 64, 1));
 }
 
 @keyframes fadein {
