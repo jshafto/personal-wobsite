@@ -55,7 +55,7 @@ body {
     color:  #dbdbdb;
     text-transform: lowercase;
     text-align: center;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     letter-spacing: 0.2em;
     margin-top: 4.4rem;
     margin-bottom: 3.5rem;
@@ -79,45 +79,144 @@ body {
 .project {
     display: flex;
     width:100%;
+    justify-content: center;
 }
 .project_text {
     color:  #dbdbdb;
     font-size: 1rem;
-    max-width: 50%;
+
 }
 
 .project_title {
     color:  #dbdbdb;
     font-size: 1.75rem;
     letter-spacing: 0.25em;
+    margin-bottom: 1em;
 }
 
 .project_image {
     border-radius: 50%;
-    width:250px;
-    height:250px;
-    max-width: 70vw;
-    max-height: 70vw;
     background-position: center;
     background-size: cover;
-    padding: 20px;
     border:0.5px solid #dbdbdb;
     background-clip: content-box;
     background-origin: content-box;
-
-
+}
+.project_image:after {
+    content:"";
+    display: block;
+    padding-bottom: 100%;
 }
 .project_one_image {
     background-image: url("../images/poemlapse_splash_page.png");
 }
+.project_two_image {
+    background-image: url("../images/simple-decks_splash_page.png");
+}
+.project_three_image {
+    background-image: url("../images/pypractice_splash_page.png");
+}
+.project_four_image {
+    background-image: url("../images/boba_splash_page.png");
+}
+
+.footer_space {
+    height: 8rem;
+}
+
 
 @media (max-width: 736px) {
+    .portfolio_head {
+        font-size: 3rem;
+    }
     .project {
         flex-direction: column;
         align-items: center;
     }
     .project_text {
         text-align: center;
+    }
+    .project_title {
+        margin-top: 1em;
+    }
+    .project_description {
+        font-size: 1.25em;
+        letter-spacing: .1em;
+    }
+    
+    .project_image {
+        width:250px;
+        height:250px;
+        max-width: 70vw;
+        max-height: 70vw;
+        padding: 20px;
+    }
+}
+@media (min-width: 737px) and (max-width: 1699px) {
+    .portfolio_head {
+        font-size: 3rem;
+    }
+    .project {
+
+    }
+    
+    .project_image {
+        width:250px;
+        height:250px;
+        max-width: 70vw;
+        max-height: 70vw;
+        padding: 20px;
+    }
+    .project_text {
+            width: calc(100% - 320px);;
+            max-width: 650px;
+            font-size: 1.25em;
+    }
+    
+    .project_two_image,
+    .project_four_image {
+        order: 2
+    }
+    .project_two_text,
+    .project_four_text {
+        margin-right: 2em;
+    }
+    .project_one_text,
+    .project_three_text {
+        margin-left: 2em;
+    }
+
+}
+
+@media (min-width: 1699px) {
+    .portfolio_head {
+        font-size: 5rem;
+    }
+    .project_text {
+            width: calc(100% - 400px);;
+            max-width: 800px;
+            font-size: 1.5em;
+    }
+    
+    .project_image {
+        width:375px;
+        height:375px;
+        max-width: 70vw;
+        max-height: 70vw;
+        padding: 30px;
+    }
+    
+    .project_two_image,
+    .project_four_image {
+        order: 2;
+    }
+    .project_two_text,
+    .project_four_text {
+        margin-right: 2em;
+    }
+    .project_one_text,
+    .project_three_text {
+        margin-left: 2em;
     }
 
 }
