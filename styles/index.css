@@ -89,7 +89,7 @@ body {
     background-position: center;
     background-size: cover;
     padding: 15px;
-    border:0.5px solid #dbdbdb;
+    border:1px solid #dbdbdb;
     background-clip: content-box;
     background-origin: content-box;
 }

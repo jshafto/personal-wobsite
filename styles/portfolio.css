@@ -101,7 +101,7 @@ body {
     border-radius: 50%;
     background-position: center;
     background-size: cover;
-    border:0.5px solid #dbdbdb;
+    border: 1px solid #dbdbdb;
     background-clip: content-box;
     background-origin: content-box;
 }
