@@ -6,6 +6,7 @@ body {
     background: linear-gradient(45deg, rgba(51, 41, 48, 1), rgba(48, 56, 64, 1));
 }
 
+
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
@@ -42,14 +43,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: darken;
-    position: fixed;
-    overflow:auto;
+    overflow: auto;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
          -o-animation: fadein 1s; /* Opera < 12.1 */
             animation: fadein 1s;
 }
+/* .background::-webkit-scrollbar-track{
+    background-color:red;
+} */
 
 .portfolio_head {
     color:  #dbdbdb;
@@ -123,7 +126,49 @@ body {
 .footer_space {
     height: 8rem;
 }
+.home_icon_container {
+    height: 0px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 15px;
+    left: 15px;
+}
 
+.home_icon {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:  35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #F4F4F5;
+    margin: 5px;
+    transition: background-color 0.25s ease,
+                color  0.25s ease,
+                border  0.25s ease;
+}
+
+.home_icon:hover  {
+    cursor: pointer;
+    color:rgba(154, 211, 240, 0.8);
+    border: 1px solid  rgba(154, 211, 240, 0.5);
+    background-color: rgba(0,0,0,.3)
+}
+.home_icon:hover>.home_link {
+    color:rgba(154, 211, 240, 0.8);
+    background-color: rgba(0,0,0,.3);
+}
+.home_link {
+    text-decoration: none;
+    color: #F4F4F5;
+    transition: background-color 0.25s ease,
+    color  0.25s ease,
+    border  0.25s ease;
+}
+.home_link:visited {
+    text-decoration: none;
+    color: #F4F4F5;
+}
 
 @media (max-width: 736px) {
     .portfolio_head {

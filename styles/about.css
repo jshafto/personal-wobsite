@@ -42,7 +42,6 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-blend-mode: darken;
-    position: fixed;
     overflow:auto;
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
