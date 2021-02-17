@@ -92,9 +92,34 @@ body {
     color:  #dbdbdb;
     font-size: 1.75rem;
     letter-spacing: 0.25em;
-    margin-bottom: 1em;
+    margin-bottom: .75em;
 }
 
+
+.project_text_link {
+    color:rgba(154, 211, 240, 0.8);
+}
+.project_text_link:visited {
+    color:rgba(154, 211, 240, 0.8);
+}
+
+.proj_img_link {
+    border-radius: 50%;
+    transition: background-color 0.25s ease,
+                color  0.25s ease,
+                border  0.25s ease;
+}
+.proj_img_link:hover  {
+    cursor: pointer;
+    color:rgba(154, 211, 240, 0.8);
+    /* border: 1px solid  rgba(154, 211, 240, 0.5); */
+    /* background-color: rgba(0,0,0,.3); */
+}
+.proj_img_link:hover>.project_image  {
+    color:rgba(154, 211, 240, 0.8);
+    border: 1px solid  rgba(154, 211, 240, 0.5);
+    background-color:rgba(58, 72, 78, 0.3)
+}
 .project_image {
     border-radius: 50%;
     background-position: center;
@@ -102,11 +127,17 @@ body {
     border: 1px solid #dbdbdb;
     background-clip: content-box;
     background-origin: content-box;
+    background-blend-mode: darken;
+    transition: background-color 0.25s ease,
+                color  0.25s ease,
+                border  0.25s ease;
+    background-color: rgba(0,0,0,.1)
 }
 .project_image:after {
     content:"";
     display: block;
     padding-bottom: 100%;
+    border-radius: 50%;
 }
 .project_one_image {
     background-image: url("../images/poemlapse_splash_page.png");
@@ -193,6 +224,11 @@ body {
     .project_title {
         margin-top: 1em;
     }
+    .project_links {
+        font-size: 1.25em;
+        letter-spacing: .1em;
+        margin-bottom: .5em;
+    }
     .project_description {
         font-size: 1.25em;
         letter-spacing: .1em;
@@ -221,12 +257,17 @@ body {
         max-height: 70vw;
         padding: 20px;
     }
+    .project_links {
+        font-size: 1em;
+        letter-spacing: .1em;
+        margin-bottom: .5em;
+    }
     .project_text {
             width: calc(100% - 320px);;
             max-width: 650px;
             font-size: 1.25em;
     }
-    
+    .proj_img_link_evens,
     .project_two_image,
     .project_four_image {
         order: 2
@@ -255,6 +296,11 @@ body {
             max-width: 800px;
             font-size: 1.5em;
     }
+    .project_links {
+        font-size: 1em;
+        letter-spacing: .1em;
+        margin-bottom: .5em;
+    }
     
     .project_image {
         width:375px;
@@ -263,7 +309,7 @@ body {
         max-height: 70vw;
         padding: 30px;
     }
-    
+    .proj_img_link_evens,
     .project_two_image,
     .project_four_image {
         order: 2;
