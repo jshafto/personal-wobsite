@@ -83,14 +83,10 @@ body {
     width:100%;
     justify-content: center;
     align-items: center;
-    /* border-bottom: 1px; */
     border-bottom: 1px solid rgba(219,219,219, .5);
+    max-width: 1500px;
 }
-/* .project_one,
-.project_three{
-    
-    background-color: rgba(0,0,0, .2);
-} */
+
 .project_text {
     color:  #dbdbdb;
     font-size: 1rem;
