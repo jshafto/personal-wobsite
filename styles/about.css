@@ -182,3 +182,13 @@ body {
     text-decoration: none;
     color: #F4F4F5;
 }
+
+.tech_icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech_i {
+    padding-right: 10px;
+    padding-top: 10px; 
+}
